@@ -1,0 +1,102 @@
+.page {
+    color:black;
+    
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.navBar {
+    background-color: green;
+    display: flex;
+    height: 8em;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.pageTitle {
+    font-size: xx-large;
+    display: flex;
+    border: 3px solid red;
+    align-self: center;
+
+}
+
+.menuButtons {
+    display: flex;
+    border: 3px solid red;
+    width: 100%;
+    align-items: center;
+    height: 80%;
+    justify-content: center;
+}
+
+
+.sections{
+    color: green;
+    display: flex;
+    flex-direction: column;
+    border: 3px solid gray;
+    margin: 1em;
+    width: 33%;
+    justify-content: space-between;
+    margin: 1em;
+    
+
+}
+
+.subsections {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    border: 2px dashed red;
+    height: 50%;
+
+}
+
+.h1 {
+    color: blue;
+    align-self: center;
+    font-size: 32pt;
+    border: 3px solid red;
+
+}
+
+
+.lists {
+    display: flex;
+    width: 50%;
+    color:green;
+    align-content: center;
+
+
+}
+
+img {
+    width:100%;
+}
+
+
+.footer {
+    display: flex;
+    width: 100%;
+    border: 2px dashed red;
+    justify-content: center;
+    background-color: silver;
+}
+
+.footerText {
+    color: green
+
+}
+
+
+
+
+
+
+
