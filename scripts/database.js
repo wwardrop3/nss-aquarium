@@ -8,7 +8,10 @@ const database = {
     fish: [
         {
             name: "Carl",
-            size: "Large",
+            image: "",
+            species: "",
+            length: "",
+            location: "Large",
             food: "crabs",
         }
     ]
