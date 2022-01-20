@@ -1,15 +1,38 @@
-import { getFish } from "./database.js";
+import { getFish, mostHolyFish, soldierFish, nonHolyFish } from "./database.js";
+
+
+
+
 
 
 export const FishList = () => {
     // Invoke the function that you imported from the database module
-    const fishes = getFish()
+    const orderedFishes = []
+
+    const holyFishArray = mostHolyFish()
+    const soldierFishArray = soldierFish()
+    const nonHolyFishArray = nonHolyFish()
+
+    for (const fish of holyFishArray) {
+        orderedFishes.push(fish)
+    }
+
+    for (const fish of soldierFishArray) {
+        orderedFishes.push(fish)
+    }
+
+    for (const fish of nonHolyFishArray) {
+        orderedFishes.push(fish)
+    }
+    
+
+
 
     // Start building a string filled with HTML syntax
     let htmlString = '<article class="fishList">'
 
     // Create HTNL representations of each fish here
-    for (const fish of fishes) {
+    for (const fish of orderedFishes) {
 
         // Why is there a backtick used for this string?
         htmlString += `<section class="fish card">
@@ -25,3 +48,5 @@ export const FishList = () => {
 
     return htmlString
 }
+
+
