@@ -8,8 +8,9 @@ const database = {
     fish: [
         {
             name: "Carl",
-            image: "https://media.istockphoto.com/photos/fish-isolated-with-scales-river-crucian-carp-picture-id1037503798?s=170667a",
-            species: "",
+            type: "",
+            image: "https://www.aquariumofpacific.org/images/made_new/images-uploads-clownfish_400_q85.jpg",
+            species: "Clownfish",
             length: "3",
             location: "Large",
             food: "Meat",
@@ -17,19 +18,21 @@ const database = {
         },
         {
             name: "John",
-            image: "https://media.istockphoto.com/photos/fish-isolated-with-scales-river-crucian-carp-picture-id1037503798?s=170667a",
-            species: "",
-            length: "4",
+            type: "",
+            image: "https://media.hswstatic.com/eyJidWNrZXQiOiJjb250ZW50Lmhzd3N0YXRpYy5jb20iLCJrZXkiOiJnaWZcL2VlbHMtc2xpcHBlcnktMi5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjI5MH19fQ==",
+            species: "Eel",
+            length: "5",
             location: "Large",
             food: "Other Fish",
         },
         {
             name: "Leonard",
-            image: "https://media.istockphoto.com/photos/fish-isolated-with-scales-river-crucian-carp-picture-id1037503798?s=170667a",
-            species: "",
-            length: "5",
+            type: "",
+            image: "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimagesvc.meredithcorp.io%2Fv3%2Fmm%2Fimage%3Furl%3Dhttps%253A%252F%252Fstatic.onecms.io%252Fwp-content%252Fuploads%252Fsites%252F6%252F2016%252F03%252Ffinding-nemo.jpg&q=85",
+            species: "Great White",
+            length: "151",
             location: "Large",
-            food: "Crabs",
+            food: "Vegitarian",
         }
 
     ]
@@ -43,6 +46,7 @@ export const mostHolyFish = () => {
 
     for (const fish of fishes) {
         if (fish.length % 3 === 0){
+            fish.type = "Holy Fish"
             holyFish.push(fish)
         }
     }
@@ -57,6 +61,7 @@ export const soldierFish = () => {
 
     for (const fish of fishes) {
         if (fish.length % 5 === 0) {
+            fish.type = "Soldier Fish"
             soldiers.push(fish)
         }
     }
@@ -69,6 +74,7 @@ export const nonHolyFish = () => {
     const regularFish = []
     for (const fish of fishes) {
         if (fish.length % 3 !== 0 && fish.length % 5 !== 0) {
+            fish.type = "Unholy Fish"
             regularFish.push(fish)
         }
     }

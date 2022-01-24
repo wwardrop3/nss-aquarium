@@ -1,6 +1,3 @@
-* {
-    border: 2px solid green;
-}
 
 
 .page {
@@ -36,7 +33,6 @@
 
 .menuButtons {
     display: flex;
-    
     width: 100%;
     align-items: center;
     height: 100%;
@@ -61,7 +57,7 @@
     display: flex;
     width: 100%;
     flex-direction: column;
-    height: 50%;
+    height: auto;
 
 }
 
@@ -94,7 +90,6 @@ img {
 .footer {
     display: flex;
     width: 100%;
-    border: 2px dashed red;
     justify-content: center;
     background-color: silver;
 }
@@ -120,7 +115,6 @@ ul {
 .locations {
     display: flex;
     flex-direction: row;
-    border: 2px dashed green;
     justify-content: space-evenly;
 
 
@@ -140,5 +134,7 @@ h2 {
 }
 
 #fishSection {
-    color: green,
+    color: green;
+    display: flex;
+    justify-content: space-evenly;
 }
